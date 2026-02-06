@@ -14,7 +14,7 @@ body {
 
 /* NAVBAR */
 header {
-  position: absolute;        /* key line */
+  position: fixed;        /* key line */
   top: 0;
   left: 0;
   width: 100%;
@@ -170,5 +170,6 @@ img, video {
     margin-left: auto;
   }
 }
+
 
 
