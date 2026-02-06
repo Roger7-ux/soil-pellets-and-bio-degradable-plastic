@@ -176,3 +176,39 @@
   color: #00aaff;
   font-weight: 600;
 }
+@media (max-width: 1024px) {
+  .product-card {
+    grid-template-columns: 1fr; /* stack columns */
+    padding: 2rem;
+  }
+
+  .product-images {
+    justify-content: center; /* center images on smaller screens */
+  }
+
+  .product-images img {
+    max-width: 200px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .products {
+    padding: 3rem 5%;
+  }
+
+  .price-box {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products h2 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+}
