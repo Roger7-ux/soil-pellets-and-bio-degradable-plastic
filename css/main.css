@@ -9,7 +9,7 @@
 body {
   background: #f7f9f6;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 /* NAVBAR */
@@ -170,6 +170,7 @@ img, video {
     margin-left: auto;
   }
 }
+
 
 
 
