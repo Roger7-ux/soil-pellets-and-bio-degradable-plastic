@@ -125,38 +125,40 @@ footer {
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
+  /* Navbar layout on mobile */
   nav {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row; /* keep logo left, toggle right */
+    align-items: center;
     padding: 1rem 5%;
   }
 
+  /* Show hamburger icon */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Hide menu by default */
   nav ul {
+    display: none;
     flex-direction: column;
     width: 100%;
-    gap: 1rem;
-    display: none; /* hide menu by default */
+    margin-top: 10px;
+    gap: 0.8rem;
   }
 
+  /* Show menu when active */
   nav ul.active {
-    display: flex; /* show when menu-toggle is clicked */
+    display: flex;
   }
 
-  nav ul li {
-    width: 100%;
-  }
-
+  /* Make links full width for easier tapping */
   nav ul li a {
     display: block;
     width: 100%;
     padding: 0.5rem 0;
   }
-
-  .menu-toggle {
-    display: block;
-    margin-left: auto;
-  }
 }
+
 
 
 
