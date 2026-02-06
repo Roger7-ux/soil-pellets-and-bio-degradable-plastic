@@ -28,11 +28,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: rgba(34, 34, 34, 0.85);
-  border-radius: 0px;
   padding: 1rem 3%;
   backdrop-filter: blur(8px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  z-index: 10;
 }
+
 
 nav ul {
   list-style: none;
@@ -112,21 +113,7 @@ footer {
   margin-top: 0;
 }
 /* ===== GLOBAL IMAGES & VIDEOS ===== */
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* ===== MOBILE FONT & LAYOUT ADJUSTMENTS ===== */
-@media (max-width: 480px) {
-  h2 { font-size: 2rem; }
-  h4 { font-size: 1.1rem; }
-  .price-box { font-size: 0.9rem; padding: 0.6rem 0.8rem; }
-  .products { padding: 3rem 5%; }
-  .hero { padding: 80px 2rem; }
-}
-/* ===============================
+* ===============================
    NAVBAR RESPONSIVE
 ================================ */
 .menu-toggle {
@@ -171,11 +158,7 @@ img, video {
   }
 }
 
-@media (max-width: 768px) {
-  body {
-    padding-top: 100px; /* taller navbar on mobile */
-  }
-}
+
 
 
 
