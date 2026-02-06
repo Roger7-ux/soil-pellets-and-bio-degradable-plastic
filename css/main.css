@@ -10,7 +10,6 @@ body {
   background: #f7f9f6;
   color: #333;
   line-height: 1.6;
-  padding-top: 80px;
 }
 
 /* NAVBAR */
@@ -172,6 +171,11 @@ img, video {
   }
 }
 
+@media (max-width: 768px) {
+  body {
+    padding-top: 100px; /* taller navbar on mobile */
+  }
+}
 
 
 
