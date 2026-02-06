@@ -1,0 +1,178 @@
+.products {
+  padding: 5rem 10%;
+  background: #f7faf7;
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 1rem auto 3rem;
+  color: #555;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* LEFT */
+.product-info ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.product-info li {
+  margin-bottom: 0.6rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.product-info li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: inherit;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.icon {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+/* RIGHT */
+.pricing h4 {
+  margin-bottom: 1rem;
+}
+
+.price-box {
+  background: #f4fffa;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  border: 1px solid #d6f2e3;
+}
+
+/* COLOR THEMES */
+.green {
+  border-left: 6px solid #00c774;
+}
+
+.green .icon,
+.green li::before {
+  color: #00c774;
+}
+
+.green .price-box span {
+  color: #00c774;
+}
+
+.blue {
+  border-left: 6px solid #00aaff;
+}
+
+.blue .icon,
+.blue li::before {
+  color: #00aaff;
+}
+
+.blue .price-box span {
+  color: #00aaff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .product-card {
+    grid-template-columns: 1fr;
+  }
+}
+.product-images {
+  display: flex;
+  gap: 1.99rem;
+  margin-bottom: 1.2rem;
+}
+
+.product-images img {
+  width: 250px;
+  height: 290px;
+  object-fit: contain;
+  background: #f6f6f6;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.05);
+}
+
+/* Optional glow */
+.green .product-images img {
+  box-shadow: 0 0 18px rgba(0, 199, 116, 0.25);
+}
+
+.blue .product-images img {
+  box-shadow: 0 0 18px rgba(0, 170, 255, 0.25);
+}
+.product-images img {
+  transition: all 0.3s ease;
+}
+
+/* Green product image glow */
+.green .product-images img:hover {
+  box-shadow:
+    0 0 18px rgba(0, 199, 116, 0.8),
+    0 0 35px rgba(0, 199, 116, 0.6);
+  transform: scale(1.05);
+}
+
+/* Blue product image glow */
+.blue .product-images img:hover {
+  box-shadow:
+    0 0 18px rgba(0, 170, 255, 0.8),
+    0 0 35px rgba(0, 170, 255, 0.6);
+  transform: scale(1.05);
+}
+
+.price-box {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Soil pellets price hover */
+.green .price-box:hover {
+  background: #ecfff4;
+  border-color: #00c774;
+}
+
+.green .price-box:hover span {
+  color: #00c774;
+  font-weight: 600;
+}
+
+/* Biodegradable plastic price hover */
+.blue .price-box:hover {
+  background: #eef9ff;
+  border-color: #00aaff;
+}
+
+.blue .price-box:hover span {
+  color: #00aaff;
+  font-weight: 600;
+}

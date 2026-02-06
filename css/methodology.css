@@ -1,0 +1,105 @@
+.methodology {
+  padding: 6rem 10%;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.methodology h2 {
+  font-size: 2.6rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.methodology-subtitle {
+  color: #000000;
+  margin-bottom: 3.5rem;
+  font-size: 1rem;
+}
+
+/* GRID */
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+/* CARDS */
+.method-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 2.5rem;
+  border-radius: 18px;
+  transition: all 0.35s ease;
+  transform: scale(1);
+}
+
+.method-card h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  opacity: 1;
+}
+
+.method-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.method-card ul li {
+  margin-bottom: 1rem; /* slightly more space for downward arrow */
+  font-size: 0.95rem;
+  opacity: 1;
+  position: relative;
+  padding-bottom: 15px; /* space for arrow below text */
+}
+
+/* Add downward arrow after each list item */
+.method-card ul li::after {
+  content: "↓"; /* downward arrow symbol */
+  display: block;
+  text-align: center; /* centers arrow below the text */
+  color: inherit;     /* same color as text */
+  font-weight: bold;
+  margin-top: 5px;    /* space between text and arrow */
+  opacity: 0.8;
+}
+
+/* HOVER EFFECT */
+.method-card:hover {
+  transform: scale(1.06);
+}
+
+/* GREEN GLOW */
+.method-card.green:hover {
+  box-shadow:
+    0 0 18px rgba(0, 199, 116, 0.8),
+    0 0 35px rgba(0, 199, 116, 0.6);
+
+}
+
+.method-card.green h3,
+.method-card.green li {
+  color: #00c774; /* darker green text */
+  opacity: 1;
+}
+
+/* BLUE GLOW */
+.method-card.blue:hover {
+  box-shadow:
+    0 0 18px rgba(0, 170, 255, 0.8),
+    0 0 35px rgba(0, 170, 255, 0.6);
+
+}
+
+.method-card.blue h3,
+.method-card.blue li {
+  color: #00aaff; /* darker blue text */
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .methodology-grid {
+    grid-template-columns: 1fr;
+  }
+}
